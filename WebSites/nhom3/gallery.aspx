@@ -20,7 +20,7 @@
                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
                        </Fields>
                    </asp:DetailsView>
-                   <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=&quot;C:\Users\My Pc\Documents\GitHub\the-last\db\banhang.mdf&quot;;Integrated Security=True;Connect Timeout=30" DeleteCommand="DELETE FROM [Khachhang] WHERE [id] = @id" InsertCommand="INSERT INTO [Khachhang] ([id], [ten], [diachi], [sdt], [ngaysinh], [email], [cmt]) VALUES (@id, @ten, @diachi, @sdt, @ngaysinh, @email, @cmt)" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [id], [ten], [diachi], [sdt], [ngaysinh], [email], [cmt] FROM [Khachhang]" UpdateCommand="UPDATE [Khachhang] SET [ten] = @ten, [diachi] = @diachi, [sdt] = @sdt, [ngaysinh] = @ngaysinh, [email] = @email, [cmt] = @cmt WHERE [id] = @id">
+                   <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:banhang %>" DeleteCommand="DELETE FROM [Khachhang] WHERE [id] = @id" InsertCommand="INSERT INTO [Khachhang] ([id], [ten], [diachi], [sdt], [ngaysinh], [email], [cmt]) VALUES (@id, @ten, @diachi, @sdt, @ngaysinh, @email, @cmt)" SelectCommand="SELECT [id], [ten], [diachi], [sdt], [ngaysinh], [email], [cmt] FROM [Khachhang]" UpdateCommand="UPDATE [Khachhang] SET [ten] = @ten, [diachi] = @diachi, [sdt] = @sdt, [ngaysinh] = @ngaysinh, [email] = @email, [cmt] = @cmt WHERE [id] = @id">
                        <DeleteParameters>
                            <asp:Parameter Name="id" Type="String" />
                        </DeleteParameters>

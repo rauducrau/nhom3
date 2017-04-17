@@ -18,7 +18,7 @@
                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
                        </Fields>
                    </asp:DetailsView>
-                   <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=&quot;C:\Users\My Pc\Downloads\banhang.mdf&quot;;Integrated Security=True;Connect Timeout=30" DeleteCommand="DELETE FROM [hoadon] WHERE [id] = @id" InsertCommand="INSERT INTO [hoadon] ([id], [tongtien], [trangthai], [ngay], [User_id]) VALUES (@id, @tongtien, @trangthai, @ngay, @User_id)" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [id], [tongtien], [trangthai], [ngay], [User_id] FROM [hoadon]" UpdateCommand="UPDATE [hoadon] SET [tongtien] = @tongtien, [trangthai] = @trangthai, [ngay] = @ngay, [User_id] = @User_id WHERE [id] = @id">
+                   <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:banhang %>" DeleteCommand="DELETE FROM [hoadon] WHERE [id] = @id" InsertCommand="INSERT INTO [hoadon] ([id], [tongtien], [trangthai], [ngay], [User_id]) VALUES (@id, @tongtien, @trangthai, @ngay, @User_id)" SelectCommand="SELECT [id], [tongtien], [trangthai], [ngay], [User_id] FROM [hoadon]" UpdateCommand="UPDATE [hoadon] SET [tongtien] = @tongtien, [trangthai] = @trangthai, [ngay] = @ngay, [User_id] = @User_id WHERE [id] = @id">
                        <DeleteParameters>
                            <asp:Parameter Name="id" Type="String" />
                        </DeleteParameters>

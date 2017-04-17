@@ -53,7 +53,7 @@
                         &nbsp;&nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
                     </ItemTemplate>
                 </asp:FormView>
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:sanpham %>" DeleteCommand="DELETE FROM [Sanpham] WHERE [id] = @id" InsertCommand="INSERT INTO [Sanpham] ([id], [ten], [gia], [soluong], [loaihang_id]) VALUES (@id, @ten, @gia, @soluong, @loaihang_id)" SelectCommand="SELECT [id], [ten], [gia], [soluong], [loaihang_id] FROM [Sanpham]" UpdateCommand="UPDATE [Sanpham] SET [ten] = @ten, [gia] = @gia, [soluong] = @soluong, [loaihang_id] = @loaihang_id WHERE [id] = @id">
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:banhang %>" DeleteCommand="DELETE FROM [Sanpham] WHERE [id] = @id" InsertCommand="INSERT INTO [Sanpham] ([id], [ten], [gia], [soluong], [loaihang_id]) VALUES (@id, @ten, @gia, @soluong, @loaihang_id)" SelectCommand="SELECT [id], [ten], [gia], [soluong], [loaihang_id] FROM [Sanpham]" UpdateCommand="UPDATE [Sanpham] SET [ten] = @ten, [gia] = @gia, [soluong] = @soluong, [loaihang_id] = @loaihang_id WHERE [id] = @id">
                     <DeleteParameters>
                         <asp:Parameter Name="id" Type="String" />
                     </DeleteParameters>
@@ -83,7 +83,7 @@
                             <asp:BoundField DataField="loaihang_id" HeaderText="loaihang_id" SortExpression="loaihang_id" />
                         </Columns>
                     </asp:GridView>
-                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:sanpham %>" DeleteCommand="DELETE FROM [Sanpham] WHERE [id] = @id" InsertCommand="INSERT INTO [Sanpham] ([id], [ten], [gia], [soluong], [loaihang_id]) VALUES (@id, @ten, @gia, @soluong, @loaihang_id)" SelectCommand="SELECT [id], [ten], [gia], [soluong], [loaihang_id] FROM [Sanpham]" UpdateCommand="UPDATE [Sanpham] SET [ten] = @ten, [gia] = @gia, [soluong] = @soluong, [loaihang_id] = @loaihang_id WHERE [id] = @id">
+                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:banhang %>" DeleteCommand="DELETE FROM [Sanpham] WHERE [id] = @id" InsertCommand="INSERT INTO [Sanpham] ([id], [ten], [gia], [soluong], [loaihang_id]) VALUES (@id, @ten, @gia, @soluong, @loaihang_id)" SelectCommand="SELECT [id], [ten], [gia], [soluong], [loaihang_id] FROM [Sanpham]" UpdateCommand="UPDATE [Sanpham] SET [ten] = @ten, [gia] = @gia, [soluong] = @soluong, [loaihang_id] = @loaihang_id WHERE [id] = @id">
                         <DeleteParameters>
                             <asp:Parameter Name="id" Type="String" />
                         </DeleteParameters>
@@ -102,7 +102,7 @@
                             <asp:Parameter Name="id" Type="String" />
                         </UpdateParameters>
                     </asp:SqlDataSource>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:banhangConnectionString2 %>" DeleteCommand="DELETE FROM [Sanpham] WHERE [id] = @id" InsertCommand="INSERT INTO [Sanpham] ([id], [ten], [gia], [soluong], [loaihang_id]) VALUES (@id, @ten, @gia, @soluong, @loaihang_id)" SelectCommand="SELECT [id], [ten], [gia], [soluong], [loaihang_id] FROM [Sanpham]" UpdateCommand="UPDATE [Sanpham] SET [ten] = @ten, [gia] = @gia, [soluong] = @soluong, [loaihang_id] = @loaihang_id WHERE [id] = @id">
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:banhang %>" DeleteCommand="DELETE FROM [Sanpham] WHERE [id] = @id" InsertCommand="INSERT INTO [Sanpham] ([id], [ten], [gia], [soluong], [loaihang_id]) VALUES (@id, @ten, @gia, @soluong, @loaihang_id)" SelectCommand="SELECT [id], [ten], [gia], [soluong], [loaihang_id] FROM [Sanpham]" UpdateCommand="UPDATE [Sanpham] SET [ten] = @ten, [gia] = @gia, [soluong] = @soluong, [loaihang_id] = @loaihang_id WHERE [id] = @id">
                         <DeleteParameters>
                             <asp:Parameter Name="id" Type="String" />
                         </DeleteParameters>
