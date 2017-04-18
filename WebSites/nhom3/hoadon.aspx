@@ -13,12 +13,12 @@
                            <asp:BoundField DataField="id" HeaderText="id" ReadOnly="True" SortExpression="id" />
                            <asp:BoundField DataField="tongtien" HeaderText="tongtien" SortExpression="tongtien" />
                            <asp:BoundField DataField="trangthai" HeaderText="trangthai" SortExpression="trangthai" />
-                           <asp:BoundField DataField="ngay" HeaderText="ngay" SortExpression="ngay" />
                            <asp:BoundField DataField="User_id" HeaderText="User_id" SortExpression="User_id" />
+                           <asp:BoundField DataField="ngay" HeaderText="ngay" SortExpression="ngay" />
                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
                        </Fields>
                    </asp:DetailsView>
-                   <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:n3 %>" DeleteCommand="DELETE FROM [hoadon] WHERE [id] = @id" InsertCommand="INSERT INTO [hoadon] ([id], [tongtien], [trangthai], [ngay], [User_id]) VALUES (@id, @tongtien, @trangthai, @ngay, @User_id)" SelectCommand="SELECT [id], [tongtien], [trangthai], [ngay], [User_id] FROM [hoadon]" UpdateCommand="UPDATE [hoadon] SET [tongtien] = @tongtien, [trangthai] = @trangthai, [ngay] = @ngay, [User_id] = @User_id WHERE [id] = @id">
+                   <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:connect %>" DeleteCommand="DELETE FROM [hoadon] WHERE [id] = @id" InsertCommand="INSERT INTO [hoadon] ([id], [tongtien], [trangthai], [User_id], [ngay]) VALUES (@id, @tongtien, @trangthai, @User_id, @ngay)" SelectCommand="SELECT [id], [tongtien], [trangthai], [User_id], [ngay] FROM [hoadon]" UpdateCommand="UPDATE [hoadon] SET [tongtien] = @tongtien, [trangthai] = @trangthai, [User_id] = @User_id, [ngay] = @ngay WHERE [id] = @id">
                        <DeleteParameters>
                            <asp:Parameter Name="id" Type="String" />
                        </DeleteParameters>
@@ -26,14 +26,14 @@
                            <asp:Parameter Name="id" Type="String" />
                            <asp:Parameter Name="tongtien" Type="Decimal" />
                            <asp:Parameter Name="trangthai" Type="String" />
-                           <asp:Parameter Name="ngay" Type="DateTime" />
                            <asp:Parameter Name="User_id" Type="String" />
+                           <asp:Parameter Name="ngay" Type="DateTime" />
                        </InsertParameters>
                        <UpdateParameters>
                            <asp:Parameter Name="tongtien" Type="Decimal" />
                            <asp:Parameter Name="trangthai" Type="String" />
-                           <asp:Parameter Name="ngay" Type="DateTime" />
                            <asp:Parameter Name="User_id" Type="String" />
+                           <asp:Parameter Name="ngay" Type="DateTime" />
                            <asp:Parameter Name="id" Type="String" />
                        </UpdateParameters>
                    </asp:SqlDataSource>

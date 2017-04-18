@@ -16,7 +16,7 @@
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
                     </Fields>
                 </asp:DetailsView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:n3 %>" DeleteCommand="DELETE FROM [hoadonct] WHERE [hoadon_id] = @hoadon_id" InsertCommand="INSERT INTO [hoadonct] ([gia], [soluong], [Sanpham_id], [hoadon_id]) VALUES (@gia, @soluong, @Sanpham_id, @hoadon_id)" SelectCommand="SELECT [gia], [soluong], [Sanpham_id], [hoadon_id] FROM [hoadonct]" UpdateCommand="UPDATE [hoadonct] SET [gia] = @gia, [soluong] = @soluong, [Sanpham_id] = @Sanpham_id WHERE [hoadon_id] = @hoadon_id">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:connect %>" DeleteCommand="DELETE FROM [hoadonct] WHERE [hoadon_id] = @hoadon_id" InsertCommand="INSERT INTO [hoadonct] ([gia], [soluong], [Sanpham_id], [hoadon_id]) VALUES (@gia, @soluong, @Sanpham_id, @hoadon_id)" SelectCommand="SELECT [gia], [soluong], [Sanpham_id], [hoadon_id] FROM [hoadonct]" UpdateCommand="UPDATE [hoadonct] SET [gia] = @gia, [soluong] = @soluong, [Sanpham_id] = @Sanpham_id WHERE [hoadon_id] = @hoadon_id">
                     <DeleteParameters>
                         <asp:Parameter Name="hoadon_id" Type="String" />
                     </DeleteParameters>

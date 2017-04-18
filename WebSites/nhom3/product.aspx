@@ -10,99 +10,51 @@
          </div>
          <div id="content">
             <div class="line">
-                <asp:FormView ID="FormView1" runat="server" DataKeyNames="id" DataSourceID="SqlDataSource2">
-                    <EditItemTemplate>
-                        id:
-                        <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("id") %>' />
-                        <br />
-                        ten:
-                        <asp:TextBox ID="tenTextBox" runat="server" Text='<%# Bind("ten") %>' />
-                        <br />
-                        gia:
-                        <asp:TextBox ID="giaTextBox" runat="server" Text='<%# Bind("gia") %>' />
-                        <br />
-                        soluong:
-                        <asp:TextBox ID="soluongTextBox" runat="server" Text='<%# Bind("soluong") %>' />
-                        <br />
-                        loaihang_id:
-                        <asp:TextBox ID="loaihang_idTextBox" runat="server" Text='<%# Bind("loaihang_id") %>' />
-                        <br />
-                        <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                        &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                    </EditItemTemplate>
-                    <InsertItemTemplate>
-                        id:
-                        <asp:TextBox ID="idTextBox" runat="server" Text='<%# Bind("id") %>' />
-                        <br />
-                        ten:
-                        <asp:TextBox ID="tenTextBox" runat="server" Text='<%# Bind("ten") %>' />
-                        <br />
-                        gia:
-                        <asp:TextBox ID="giaTextBox" runat="server" Text='<%# Bind("gia") %>' />
-                        <br />
-                        soluong:
-                        <asp:TextBox ID="soluongTextBox" runat="server" Text='<%# Bind("soluong") %>' />
-                        <br />
-                        loaihang_id:
-                        <asp:TextBox ID="loaihang_idTextBox" runat="server" Text='<%# Bind("loaihang_id") %>' />
-                        <br />
-                        <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                        &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                    </InsertItemTemplate>
-                    <ItemTemplate>
-                        <asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
-                    </ItemTemplate>
-                </asp:FormView>
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:n3 %>" DeleteCommand="DELETE FROM [Sanpham] WHERE [id] = @id" InsertCommand="INSERT INTO [Sanpham] ([id], [ten], [gia], [soluong], [loaihang_id]) VALUES (@id, @ten, @gia, @soluong, @loaihang_id)" SelectCommand="SELECT [id], [ten], [gia], [soluong], [loaihang_id] FROM [Sanpham]" UpdateCommand="UPDATE [Sanpham] SET [ten] = @ten, [gia] = @gia, [soluong] = @soluong, [loaihang_id] = @loaihang_id WHERE [id] = @id">
-                    <DeleteParameters>
-                        <asp:Parameter Name="id" Type="String" />
-                    </DeleteParameters>
-                    <InsertParameters>
-                        <asp:Parameter Name="id" Type="String" />
-                        <asp:Parameter Name="ten" Type="String" />
-                        <asp:Parameter Name="gia" Type="Int32" />
-                        <asp:Parameter Name="soluong" Type="Int32" />
-                        <asp:Parameter Name="loaihang_id" Type="String" />
-                    </InsertParameters>
-                    <UpdateParameters>
-                        <asp:Parameter Name="ten" Type="String" />
-                        <asp:Parameter Name="gia" Type="Int32" />
-                        <asp:Parameter Name="soluong" Type="Int32" />
-                        <asp:Parameter Name="loaihang_id" Type="String" />
-                        <asp:Parameter Name="id" Type="String" />
-                    </UpdateParameters>
-                </asp:SqlDataSource>
                 <asp:Panel ID="Panel1" runat="server">
-                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource3">
-                        <Columns>
-                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                            <asp:BoundField DataField="id" HeaderText="id" ReadOnly="True" SortExpression="id" />
-                            <asp:BoundField DataField="ten" HeaderText="ten" SortExpression="ten" />
-                            <asp:BoundField DataField="gia" HeaderText="gia" SortExpression="gia" />
-                            <asp:BoundField DataField="soluong" HeaderText="soluong" SortExpression="soluong" />
-                            <asp:BoundField DataField="loaihang_id" HeaderText="loaihang_id" SortExpression="loaihang_id" />
-                        </Columns>
-                    </asp:GridView>
-                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:n3 %>" DeleteCommand="DELETE FROM [Sanpham] WHERE [id] = @id" InsertCommand="INSERT INTO [Sanpham] ([id], [ten], [gia], [soluong], [loaihang_id]) VALUES (@id, @ten, @gia, @soluong, @loaihang_id)" SelectCommand="SELECT [id], [ten], [gia], [soluong], [loaihang_id] FROM [Sanpham]" UpdateCommand="UPDATE [Sanpham] SET [ten] = @ten, [gia] = @gia, [soluong] = @soluong, [loaihang_id] = @loaihang_id WHERE [id] = @id">
-                        <DeleteParameters>
-                            <asp:Parameter Name="id" Type="String" />
-                        </DeleteParameters>
-                        <InsertParameters>
-                            <asp:Parameter Name="id" Type="String" />
-                            <asp:Parameter Name="ten" Type="String" />
-                            <asp:Parameter Name="gia" Type="Int32" />
-                            <asp:Parameter Name="soluong" Type="Int32" />
-                            <asp:Parameter Name="loaihang_id" Type="String" />
-                        </InsertParameters>
-                        <UpdateParameters>
-                            <asp:Parameter Name="ten" Type="String" />
-                            <asp:Parameter Name="gia" Type="Int32" />
-                            <asp:Parameter Name="soluong" Type="Int32" />
-                            <asp:Parameter Name="loaihang_id" Type="String" />
-                            <asp:Parameter Name="id" Type="String" />
-                        </UpdateParameters>
-                    </asp:SqlDataSource>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:banhang %>" DeleteCommand="DELETE FROM [Sanpham] WHERE [id] = @id" InsertCommand="INSERT INTO [Sanpham] ([id], [ten], [gia], [soluong], [loaihang_id]) VALUES (@id, @ten, @gia, @soluong, @loaihang_id)" SelectCommand="SELECT [id], [ten], [gia], [soluong], [loaihang_id] FROM [Sanpham]" UpdateCommand="UPDATE [Sanpham] SET [ten] = @ten, [gia] = @gia, [soluong] = @soluong, [loaihang_id] = @loaihang_id WHERE [id] = @id">
+                    <asp:FormView ID="FormView1" runat="server" DataKeyNames="id" DataSourceID="nhom3">
+                        <EditItemTemplate>
+                            id:
+                            <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("id") %>' />
+                            <br />
+                            ten:
+                            <asp:TextBox ID="tenTextBox" runat="server" Text='<%# Bind("ten") %>' />
+                            <br />
+                            gia:
+                            <asp:TextBox ID="giaTextBox" runat="server" Text='<%# Bind("gia") %>' />
+                            <br />
+                            soluong:
+                            <asp:TextBox ID="soluongTextBox" runat="server" Text='<%# Bind("soluong") %>' />
+                            <br />
+                            loaihang_id:
+                            <asp:TextBox ID="loaihang_idTextBox" runat="server" Text='<%# Bind("loaihang_id") %>' />
+                            <br />
+                            <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                            &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                        </EditItemTemplate>
+                        <InsertItemTemplate>
+                            id:
+                            <asp:TextBox ID="idTextBox" runat="server" Text='<%# Bind("id") %>' />
+                            <br />
+                            ten:
+                            <asp:TextBox ID="tenTextBox" runat="server" Text='<%# Bind("ten") %>' />
+                            <br />
+                            gia:
+                            <asp:TextBox ID="giaTextBox" runat="server" Text='<%# Bind("gia") %>' />
+                            <br />
+                            soluong:
+                            <asp:TextBox ID="soluongTextBox" runat="server" Text='<%# Bind("soluong") %>' />
+                            <br />
+                            loaihang_id:
+                            <asp:TextBox ID="loaihang_idTextBox" runat="server" Text='<%# Bind("loaihang_id") %>' />
+                            <br />
+                            <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                            &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                        </InsertItemTemplate>
+                        <ItemTemplate>
+                            &nbsp;&nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
+                        </ItemTemplate>
+                    </asp:FormView>
+                    <asp:SqlDataSource ID="nhom3" runat="server" ConnectionString="<%$ ConnectionStrings:connect %>" DeleteCommand="DELETE FROM [Sanpham] WHERE [id] = @id" InsertCommand="INSERT INTO [Sanpham] ([id], [ten], [gia], [soluong], [loaihang_id]) VALUES (@id, @ten, @gia, @soluong, @loaihang_id)" SelectCommand="SELECT [id], [ten], [gia], [soluong], [loaihang_id] FROM [Sanpham]" UpdateCommand="UPDATE [Sanpham] SET [ten] = @ten, [gia] = @gia, [soluong] = @soluong, [loaihang_id] = @loaihang_id WHERE [id] = @id">
                         <DeleteParameters>
                             <asp:Parameter Name="id" Type="String" />
                         </DeleteParameters>
@@ -122,12 +74,18 @@
                         </UpdateParameters>
                     </asp:SqlDataSource>
                 </asp:Panel>
-                <br />
-
-                
-                
-
-                <br />
+                <asp:Panel ID="Panel2" runat="server">
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="nhom3">
+                        <Columns>
+                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                            <asp:BoundField DataField="id" HeaderText="id" ReadOnly="True" SortExpression="id" />
+                            <asp:BoundField DataField="ten" HeaderText="ten" SortExpression="ten" />
+                            <asp:BoundField DataField="gia" HeaderText="gia" SortExpression="gia" />
+                            <asp:BoundField DataField="soluong" HeaderText="soluong" SortExpression="soluong" />
+                            <asp:BoundField DataField="loaihang_id" HeaderText="loaihang_id" SortExpression="loaihang_id" />
+                        </Columns>
+                    </asp:GridView>
+                </asp:Panel>
 
             </div>
          </div>
