@@ -54,6 +54,8 @@
                         </li>
                           <li><a href="hoadon.aspx">BILL</a>
                         </li>
+                         <li><a href="LoaiHang.aspx">Loai Hang</a>
+                        </li>
                         
                         <li><a href="contact.aspx">Contact</a>
                         </li>
@@ -73,7 +75,7 @@
             </div>
             <div class="s-12 l-6">
                <p class="right">
-                  <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">FPT SHOP VN</a>
+                  <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">FOT SHOP VN</a>
                </p>
             </div>
          </div>
