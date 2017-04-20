@@ -39,7 +39,7 @@
                         </li>
                         <li><a href="product.aspx">Product</a>
                         </li>
-                        <li><a href="services.aspx">Bill Details</a>
+                        <li><a href="Service.aspx">Bill Details</a>
                         </li>
                      </ul>
                   </div>
