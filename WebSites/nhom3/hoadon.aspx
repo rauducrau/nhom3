@@ -3,10 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <form id="form1" runat="server">
     <section>
-         <div id="head">
-         </div>
+         <div id="head"></div>
          <div id="content">
+             <h2>Thông tin các hóa đơn</h2>
             <div class="line">
+                <center>
                <div class="margin">
                    <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource1">
                        <Fields>
@@ -38,6 +39,7 @@
                        </UpdateParameters>
                    </asp:SqlDataSource>
                </div>
+                    </center>
             </div>
          </div>
          <div id="fourth-block">
