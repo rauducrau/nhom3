@@ -5,7 +5,7 @@
     <section>
          <div id="head"></div>
          <div id="content">
-             <h2>Thông tin các hóa đơn</h2>
+             <h2>Thông tin hóa đơn</h2>
             <div class="line">
                 <center>
                <div class="margin">
