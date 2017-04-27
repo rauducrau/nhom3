@@ -128,6 +128,7 @@ i, .icon {
   color: #eee;
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.25);
 }
+
 .icon-cloud:before { content: "\2601"; }
 .icon-at:before { content: "\0040"; }
 .icon-plus:before { content: "\002B"; }

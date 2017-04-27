@@ -83,6 +83,9 @@ footer {
 footer p, footer a:link, footer a:visited, footer a:hover {
 	color: #fff;
 }
+.khanh {
+color:#f25f0a;
+}
 .carousel-text {
 	display: block;
 	position: absolute;
@@ -167,6 +170,7 @@ a.button {
 	font-weight: 400;
 	margin: 1em 0 0.3em;
 	text-transform: none;
+    color:#f25f0a;
 }
 .content-block {
 	background: none repeat scroll 0 0 rgb(0, 30, 34);
