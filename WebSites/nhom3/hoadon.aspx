@@ -6,7 +6,7 @@
          <div id="head"></div>
          <div id="content">
              <h2>Thông tin các hóa đơn</h2>
-             <h2>_____________________</h2>
+             <h2>__________**_________</h2>
             <div class="line">
                 <center>
                <div class="margin">
