@@ -19,6 +19,9 @@
 .tab-nav > .tab-label {
   float:left;
 }
+.ql {
+    color:orange;
+}
 a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover {
   background: none repeat scroll 0 0 #262626;
   color: #fff;
