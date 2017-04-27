@@ -11,7 +11,7 @@
 
                    
 
-                   <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="791px" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource1">
+                   <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="791px" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource1" ForeColor="Black">
                        <Fields>
                            <asp:BoundField DataField="id" HeaderText="id" ReadOnly="True" SortExpression="id" />
                            <asp:BoundField DataField="ten" HeaderText="ten" SortExpression="ten" />
