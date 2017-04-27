@@ -11,8 +11,12 @@
 
                    
 
+<<<<<<< HEAD
                    <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="791px" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
                        <EditRowStyle BackColor="#165999" Font-Bold="True" ForeColor="#CCFF99" />
+=======
+                   <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="791px" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource1" ForeColor="Black">
+>>>>>>> 0751a83c8af87b91ef1ca00db30bcfc8b892e227
                        <Fields>
                            <asp:BoundField DataField="id" HeaderText="id" ReadOnly="True" SortExpression="id" />
                            <asp:BoundField DataField="ten" HeaderText="ten" SortExpression="ten" />
