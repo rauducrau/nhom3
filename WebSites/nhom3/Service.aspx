@@ -8,17 +8,17 @@
          <div id="content">
             <div class="line">
                <div class="margin">
-                 
+                 <h4> Hóa đơn chi tiết </h4>
          <div id="fourth-block">
             <div class="line">
                <div id="owl-demo2" class="owl-carousel owl-theme">
                </div>
-                <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="Sanpham_id,hoadon_id" DataSourceID="SqlDataSource1" Height="50px" Width="125px">
+                <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="Sanpham_id,hoadon_id" DataSourceID="SqlDataSource1" Height="50px" Width="125px" BackColor="#FF6600" BorderColor="#FF6600">
                     <Fields>
                         <asp:BoundField DataField="gia" HeaderText="gia" SortExpression="gia" />
                         <asp:BoundField DataField="soluong" HeaderText="soluong" SortExpression="soluong" />
                         <asp:BoundField DataField="Sanpham_id" HeaderText="Sanpham_id" ReadOnly="True" SortExpression="Sanpham_id" />
-                        <asp:BoundField DataField="hoadon_id" HeaderText="hoadon_id" ReadOnly="True" SortExpression="hoadon_id" />
+                        <asp:BoundField DataField="hoadon_id" HeaderText="hoadon_id" ReadOnly="True" SortExpression="hoadon_id"  />
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
                     </Fields>
                 </asp:DetailsView>
